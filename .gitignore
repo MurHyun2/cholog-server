@@ -1,0 +1,119 @@
+### Java ###
+# 컴파일된 클래스 파일
+*.class
+
+# 로그 파일
+*.log
+logs/
+
+# BlueJ 파일
+*.ctxt
+
+# 모바일 툴 (J2ME)
+.mtj.tmp/
+
+# 패키지 파일
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# 가상 머신 오류 로그
+hs_err_pid*
+replay_pid*
+
+### Maven ###
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+### Gradle ###
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+### Windows ###
+# 윈도우 썸네일 캐시
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+# 덤프 파일
+*.stackdump
+# 폴더 설정 파일
+[Dd]esktop.ini
+# 휴지통
+$RECYCLE.BIN/
+# 윈도우 인스톨러 파일
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+# 윈도우 단축 파일
+*.lnk
+
+### 프로젝트 특정 ###
+# 애플리케이션 속성 (로컬 구성)
+application-local.properties
+application-local.yml
+
+# H2 데이터베이스 파일
+*.db
+
+# Node.js 종속성
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# 임시 파일
+*.tmp
+*.swp
+*.swo
+*~ 
