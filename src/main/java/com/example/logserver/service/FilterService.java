@@ -31,9 +31,9 @@ public class FilterService {
         Map<String, Object> filters = new HashMap<>();
         List<LogEntry> logEntries = logRepository.getAllLogs();
 
-        // API 키(ServerId) 목록
+        // API 키(apiKey) 목록
         filters.put("apiKeys", logEntries.stream()
-                .map(LogEntry::getServerId)
+                .map(LogEntry::getApiKey)
                 .filter(Objects::nonNull)
                 .distinct()
                 .collect(Collectors.toList()));

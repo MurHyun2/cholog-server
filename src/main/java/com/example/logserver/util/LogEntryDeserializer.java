@@ -34,7 +34,7 @@ public class LogEntryDeserializer extends JsonDeserializer<LogEntry> {
         if (node.has("profiles")) entry.setProfiles(node.get("profiles").asText(null)); // 프로필 정보 추가
         if (node.has("version")) entry.setVersion(node.get("version").asText(null));
         if (node.has("hostName")) entry.setHostName(node.get("hostName").asText(null));
-        if (node.has("serverId")) entry.setServerId(node.get("serverId").asText(null));
+        if (node.has("apiKey")) entry.setApiKey(node.get("apiKey").asText(null));
         if (node.has("requestId")) entry.setRequestId(node.get("requestId").asText(null));
         if (node.has("requestMethod")) entry.setRequestMethod(node.get("requestMethod").asText(null));
         if (node.has("requestUri")) entry.setRequestUri(node.get("requestUri").asText(null));

@@ -3,7 +3,6 @@ package com.example.logserver.model;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.util.Map;
@@ -30,7 +29,7 @@ public class LogEntry {
     private String profiles; // Spring 활성 프로필 정보
     private String version;
     private String hostName;
-    private String serverId;
+    private String apiKey;
 
     // 요청 정보
     private String requestId;
@@ -69,10 +68,6 @@ public class LogEntry {
         // 빈 문자열 필드 제거
         if (requestParams != null && requestParams.isEmpty()) requestParams = null;
         if (responseHeaders != null && responseHeaders.isEmpty()) responseHeaders = null;
-        if (serverId != null && serverId.isEmpty()) serverId = null;
-    }
-
-    public String getApiKey() {
-        return serverId;
+        if (apiKey != null && apiKey.isEmpty()) apiKey = null;
     }
 }
